@@ -1,0 +1,24 @@
+<div class="container">
+    <div >
+        <h4> Tell us if you are coming</h4>
+    </div>
+    <div>
+       <form [formGroup]="attendanceForm" (ngSubmit)=onSubmit()>
+           <div class="form-group">
+            <label for="name">Name: </label><br>
+            <input id="name" type="text" formControlName="name">
+           </div>
+            
+            <p>Please tell us if you are coming:</p>
+              <input type="radio" id="yesResponse" formControlName="comingOrNot" value="HTML">
+              <label for="yesResponse">Absoloutley Yes</label><br>
+              <input type="radio" id="noResponse" formControlName="comingOrNot" value="CSS">
+              <label for="noResponse">Sadly No</label><br>
+
+            <label for="dietRequirments">Dietary Requirements: </label><br>
+            <input type="text" id="dietRequirements" formControlName="dietaryRequirementsng"> <br>
+            <button type="submit" [disabled]="!attendanceForm.valid">Submit</button>
+              
+       </form>
+    </div>
+</div>
