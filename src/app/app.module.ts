@@ -9,21 +9,26 @@ import { PlanForDayComponent } from './plan-for-day/plan-for-day.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { GiftsComponent } from './gifts/gifts.component';
 import { ConfirmAttendanceComponent } from './confirm-attendance/confirm-attendance.component';
-
+import {  HttpClientModule } from '@angular/common/http';
+import { ReceptionSeatingPlanComponent } from './reception-seating-plan/reception-seating-plan.component';
+import { ReceptionMenuComponent } from './reception-menu/reception-menu.component'
 @NgModule({
   declarations: [
     AppComponent,
     PlanForDayComponent,
     WelcomePageComponent,
     GiftsComponent,
-    ConfirmAttendanceComponent
+    ConfirmAttendanceComponent,
+    ReceptionSeatingPlanComponent,
+    ReceptionMenuComponent
   ],
   imports: [ NgbModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule, 
     FormsModule, 
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
     
   ],
   providers: [],

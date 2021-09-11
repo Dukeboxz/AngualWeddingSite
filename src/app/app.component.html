@@ -3,10 +3,21 @@
   <img src="../assets/Images/SharonStephen3.jpg" class="img-fluid" alt="Responsive image">
   <h1  class="mx-auto" width="100%" id="TitleHeader">Stephen and Sharon Wedding</h1>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    
     <a class="navbar-brand" routerLink="/planforday">Plan For Day</a>
     <a class="navbar-brand" routerLink="/gifts">Gifts</a>
+    
     <a class="navbar-brand" routerLink="/confirmAttendance">Let Us Know You Are Coming</a>
-
+    <div ngbDropdown>
+      <a class="navbar-brand" id="gfg" 
+              ngbDropdownToggle>Reception</a>
+      <div ngbDropdownMenu="gfg">
+        <a class="navbar-brand" routerLink="/Reception/Menu">Menu</a>
+        <a class="navbar-brand" routerLink="/Reception/SeatingPlan">Seating Plan</a>
+      </div>
+    </div>
+  
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

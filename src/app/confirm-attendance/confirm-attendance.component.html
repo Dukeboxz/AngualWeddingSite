@@ -10,13 +10,13 @@
            </div>
             
             <p>Please tell us if you are coming:</p>
-              <input type="radio" id="yesResponse" formControlName="comingOrNot" value="HTML">
+              <input type="radio" id="yesResponse" formControlName="comingOrNot" value=true>
               <label for="yesResponse">Absoloutley Yes</label><br>
-              <input type="radio" id="noResponse" formControlName="comingOrNot" value="CSS">
+              <input type="radio" id="noResponse" formControlName="comingOrNot" value=false>
               <label for="noResponse">Sadly No</label><br>
 
             <label for="dietRequirments">Dietary Requirements: </label><br>
-            <input type="text" id="dietRequirements" formControlName="dietaryRequirementsng"> <br>
+            <input type="text" id="dietRequirements" formControlName="dietaryRequirements"> <br>
             <button type="submit" [disabled]="!attendanceForm.valid">Submit</button>
               
        </form>
