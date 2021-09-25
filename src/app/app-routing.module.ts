@@ -6,6 +6,7 @@ import { GiftsComponent } from './gifts/gifts.component';
 import { ConfirmAttendanceComponent } from './confirm-attendance/confirm-attendance.component';
 import { ReceptionSeatingPlanComponent } from './reception-seating-plan/reception-seating-plan.component';
 import { ReceptionMenuComponent } from './reception-menu/reception-menu.component';
+import { EveningReceptionComponent } from './evening-reception/evening-reception.component';
 
 const routes: Routes = [
 {path:'welcomepage', component: WelcomePageComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
 {path: 'confirmAttendance', component:ConfirmAttendanceComponent},
 {path: 'Reception/Menu', component: ReceptionMenuComponent}, 
 {path: 'Reception/SeatingPlan', component:ReceptionSeatingPlanComponent},
+{path: 'EveningReception', component: EveningReceptionComponent}, 
 {path:'', redirectTo: '/welcomepage', pathMatch: 'full'}
 
 ];

@@ -11,7 +11,8 @@ import { GiftsComponent } from './gifts/gifts.component';
 import { ConfirmAttendanceComponent } from './confirm-attendance/confirm-attendance.component';
 import {  HttpClientModule } from '@angular/common/http';
 import { ReceptionSeatingPlanComponent } from './reception-seating-plan/reception-seating-plan.component';
-import { ReceptionMenuComponent } from './reception-menu/reception-menu.component'
+import { ReceptionMenuComponent } from './reception-menu/reception-menu.component';
+import { EveningReceptionComponent } from './evening-reception/evening-reception.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { ReceptionMenuComponent } from './reception-menu/reception-menu.componen
     GiftsComponent,
     ConfirmAttendanceComponent,
     ReceptionSeatingPlanComponent,
-    ReceptionMenuComponent
+    ReceptionMenuComponent,
+    EveningReceptionComponent
   ],
   imports: [ NgbModule,
     BrowserModule,

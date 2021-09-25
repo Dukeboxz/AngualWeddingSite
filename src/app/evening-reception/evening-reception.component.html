@@ -1,0 +1,57 @@
+<div class="container">
+
+    <p>Those that have been invited to the evening reception please arrive between 18:45 and 19:30 to be greeted by the bride and groom</p>
+
+    <p>Cutting the cake and first dance are due to happen at 20:00</p>
+
+    <div>
+        <p>A buffet will be serverd at 20:30</p>
+        <p>It will include the following items</p>
+        <ul>
+            <li>Traditional Tuscan Lasagne</li>
+            <li>Sandwiches with mixed fillings</li>
+            <li>Sausage Rolls</li>
+            <li>Vegetable Spring Rolls</li>
+            <li>BBQ Chicken Drumsticks</li>
+            <li>Chips</li>
+            <li>Potato Salad</li>
+            <li>Pasta Salad</li>
+        </ul>
+    </div>
+
+    <div class="songRequest" >
+        <h2> Let us know if you want a song played</h2>
+        <form [formGroup]="songRequestform" (ngSubmit)=SubmitSong()>
+            <div class="form-group">
+                <label for="Song">Song</label> <br>
+                <input type="text" class="form-control" id="Song" formControlName="Song">
+            </div>
+            <div class="form-group">
+                <label for="Artist">Artist</label> <br>
+                <input type="text" class="form-control" id="Artist" formControlName="Artist">
+            </div>
+
+            <div class="form-group">
+                <label for="Album">Album</label> <br>
+                <input type="text" class="form-control" id="Album" formControlName="Album">
+            </div>
+            <div class="form-group">
+                <label for="Message">Message</label> <br>
+                <input type="text" class="form-control-lg" id="Message" formControlName="Message">
+            </div>
+            <div class="form-group">
+                <label for="RequestBy">Requested By</label> <br>
+                <input type="text"class="form-control" id="RequestBy" formControlName="RequestBy">
+            </div>
+            <br>
+            <div class="form-group">
+                <button type="submit" [disabled]="!songRequestform.valid">Submit</button>
+            </div>
+         
+           
+        </form>
+        <br/>
+
+    </div>
+    <footer></footer>
+</div>
